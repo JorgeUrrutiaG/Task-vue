@@ -1,0 +1,3 @@
+<template>
+    <AppTable/>
+</template>
