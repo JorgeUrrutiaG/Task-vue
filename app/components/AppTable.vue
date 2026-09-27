@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const headers = ref(["NºTICKET", "FECHA","PRIORIDAD","ESTADO","TAREA","SOLICITANTE","USUARIO","CIERRE","PLATAFORMA","ACCIONES"])
 
-const desserts = ref([
+const tasks = ref([
     {
         id: 1,
         fecha: "25-09-2026",
@@ -97,7 +97,7 @@ const desserts = ref([
                 </tr>
             </thead>
             <tbody class="table-body">
-                <tr v-for="item in desserts" :key="item.id">
+                <tr v-for="item in tasks" :key="item.id">
                     <td>{{ item.id }}</td>
                     <td>{{ item.fecha }}</td>
                     <td>{{ item.prioridad }}</td>
@@ -118,12 +118,13 @@ const desserts = ref([
 <style scoped>
 .table-container {
     background-color: #eeeeee;
-    width: 90%;
-    height: 100%;
-    margin: 10px auto 20px auto;
-    padding: 0 10px;
+    width: 95%;
+    height: 97%;
+    /* margin: 10px auto 20px auto; */
+    margin: 8px auto;
+    padding: 5px 10px;
     overflow: auto;
-    border: 1px solid #5d5d5e;
+    border: 1px solid #dddddd;
     border-radius: 8px;
 }
 
